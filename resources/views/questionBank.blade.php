@@ -18,7 +18,7 @@
                         <div>
                             <x-label for="question{{$key}}" :value="$val->question" />
 
-                            <x-input class="block mt-1 w-full" type="text" name="answer_{{$val->id}}" required autofocus />
+                            <x-input class="block mt-1 w-full" type="text" name="answer_{{$val->id}}" autofocus />
                         </div>
                         @endforeach
                         <x-button id="submit" class="ml-3 mt-1">
