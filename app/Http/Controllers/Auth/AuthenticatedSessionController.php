@@ -21,6 +21,16 @@ class AuthenticatedSessionController extends Controller
     }
 
     /**
+     * Display the login view.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function create()
+    {
+        return view('auth.login');
+    }
+
+    /**
      * Handle an incoming authentication request.
      *
      * @param  \App\Http\Requests\Auth\LoginRequest  $request
